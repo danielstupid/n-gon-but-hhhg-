@@ -4726,7 +4726,7 @@ const spawn = {
         };
     },
     revolutionBoss(x, y, radius = 70) {
-        const sides = 9 + Math.floor(Math.min(12, 0.2 * simulation.difficulty))
+        const sides = 30
         const coolBends = [-1.8, 0, 0, 0.9, 1.2]
         const bendFactor = coolBends[Math.floor(Math.random() * coolBends.length)];
         mobs.spawn(x, y, sides, radius, "rgb(201,202,225)");
